@@ -1,0 +1,23 @@
+<canvas width="350" height="300"></canvas>
+
+<script>
+    var cabeca = document.querySelector('canvas');
+    var detalhes = cabeca.getContext('2d');
+
+    //cabeça
+    detalhes.fillStyle = 'darkgreen';
+    detalhes.fillRect(0, 0, 350, 300);
+
+    //olhos
+    detalhes.fillStyle = 'black';
+    detalhes.fillRect(50, 70, 90, 90);
+    detalhes.fillRect(210, 70, 90, 90);
+
+    //nariz
+    detalhes.fillRect(140, 160, 70, 100);
+
+    //boca ou barba
+    detalhes.fillRect(100, 190, 40, 110);
+    detalhes.fillRect(210, 190, 40, 110);
+
+</script>

@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	console.log(numeroPensado);
+
+	var tentativa = 1;
+
+	while (tentativa <= 3) {
+
+		var chute = parseInt(prompt("Informe um número:")); 
+
+		if (chute == numeroPensado) {
+
+			mostra("Muito bem, vc acertou. Bem vindo a tropa do Jamal! O número pensado é " + numeroPensado);
+			break;
+
+		} else {
+
+			mostra("Infelizmente vc errou");
+
+		}			
+
+		tentativa++;
+	}
+
+	
+
+</script>
